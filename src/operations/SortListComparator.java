@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import comparators.SortByLevel;
-import record_classes.ColorDef;
+import support.ColorDef;
+import support.SortByLevel;
 
 public class SortListComparator {
 

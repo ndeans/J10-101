@@ -1,7 +1,7 @@
 package main;
 
 import operations.*;
-import utilities.LogPrinter;
+import support.LogPrinter;
 
 public class Application {
 
@@ -54,16 +54,57 @@ public class Application {
 		printBreak();
 		
 		// now play with Linked Lists
-		lp.printHead("Create and populate a LinkedList");
+		lp.printHead("Create and populate a LinkedList...");
 		OpLinkedList llist = new OpLinkedList();
 		printBreak();
 		llist.getStatus();
 		llist = null;
+		printBreak();
 		
 		// now play with HashMaps
-		lp.printHead("Create and populate a HasMap");
+		lp.printHead("Create and populate a HashMap...");
 		OpHashMap hmap = new OpHashMap();
+		
 		printBreak();
+		
+		// Find Common Names between two String arrays
+		lp.printHead("Find common names between two String arrays...");
+		CommonStrings cs = new CommonStrings();
+		cs.start();
+		printBreak();
+		
+		// Check if word is a palindrome
+		lp.printHead("Check if word is a palindrome...");
+		Palindrome c4p = new Palindrome();
+		c4p.start();
+		printBreak();
+		
+		// binary search tree
+		lp.printHead("Binary Tree Check...");
+		BinaryTreeCheck btc = new BinaryTreeCheck();
+		btc.start();
+		printBreak();
+		
+		// averages
+		lp.printHead("Print averages (integers to doubles)...");
+		Averages a = new Averages();
+		a.start();
+		printBreak();
+		
+		// generics
+		lp.printHead("Advantages of Generics???");
+		GenericOrNot gen = new GenericOrNot();
+		gen.start();
+		printBreak();
+		
+		// parsing XML with STAX (Java Streaming API for XML)
+		lp.printHead("Parsing XML with STAX...");
+		ParseXMLBreakfastMenu stax = new ParseXMLBreakfastMenu();
+		stax.start();
+		printBreak();
+		
+		// program complete
+		lp.printHead("Testing Complete :)");
 		
 	}
 	

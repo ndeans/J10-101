@@ -1,12 +1,13 @@
 package operations;
 
-public class DupChars {
+import base.BaseOperation;
+
+public class DupChars extends BaseOperation {
 
 	public DupChars() {
-		
 	}
 	
-
+	
 	public void printDupes( String str ) {
 		
 		int count[] = new int[256];

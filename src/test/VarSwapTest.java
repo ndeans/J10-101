@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import operations.VarSwap;
-import utilities.LogPrinter;
+import support.LogPrinter;
 
 class VarSwapTest {
 	
