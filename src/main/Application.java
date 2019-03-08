@@ -103,6 +103,29 @@ public class Application {
 		stax.start();
 		printBreak();
 		
+		// Check for number in array
+		lp.printHead("Check for Integer in Array");
+		FindNumberInArray fnia = new FindNumberInArray();
+		fnia.start();
+		printBreak();
+		
+		// HashMap CRUD
+		lp.printHead("HashMap CRUD");
+		// CrudMap map = new CrudMap();
+		printBreak();
+
+
+		// depth first
+		printBreak();
+
+		
+		// Lambda Expressions
+		lp.printHead("Lambda Expression...");
+		LambdaVsMethod lx = new LambdaVsMethod();
+		lx.start();
+		printBreak();
+
+		
 		// program complete
 		lp.printHead("Testing Complete :)");
 		

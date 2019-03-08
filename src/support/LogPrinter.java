@@ -22,4 +22,8 @@ public class LogPrinter {
 		System.out.println(); System.out.println();
 	}
 	
+	public void printMsg(String msg) {
+		System.out.println("... " + msg);
+	}
+	
 }

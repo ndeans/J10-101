@@ -1,9 +1,9 @@
 package operations;
 
-import base.Operation;
+import base.BaseOperation;
 import support.LogPrinter;
 
-public class BinaryTreeCheck implements Operation {
+public class BinaryTreeCheck extends BaseOperation {
 
 	LogPrinter lp;
 	
