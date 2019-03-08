@@ -14,7 +14,6 @@ public class LambdaVsMethod extends BaseOperation {
 
 	public Comparator<String> strComparatorLambda = (String o1, String o2) -> { return o1.compareTo(o2); };
 
-	
 	public void start() {
 		
 		int x1 = strComparator.compare("hello", "world");
