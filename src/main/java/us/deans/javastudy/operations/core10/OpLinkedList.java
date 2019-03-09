@@ -1,4 +1,4 @@
-package us.deans.javastudy.operations;
+package us.deans.javastudy.operations.core10;
 
 import java.util.LinkedList;
 import java.util.Iterator;
@@ -31,15 +31,12 @@ public class OpLinkedList {
 		
 	}
 	
-	
 	public void getStatus() {
 		
 		System.out.println("size of linked list: " + list.size());
 		System.out.println("is linked list empty? " + list.isEmpty());
 		System.out.println("does linked list contain 'blue'? " + list.contains("blue"));
 		
-		
 	}
-	
 	
 }

@@ -1,4 +1,4 @@
-package us.deans.javastudy.operations;
+package us.deans.javastudy.operations.core10;
 
 public class Fibonacci {
 

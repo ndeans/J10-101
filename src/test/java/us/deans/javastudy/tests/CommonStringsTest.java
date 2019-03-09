@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import us.deans.javastudy.operations.CommonStrings;
+import us.deans.javastudy.operations.core10.CommonStrings;
 import us.deans.javastudy.support.LogPrinter;
 
 class CommonStringsTest {

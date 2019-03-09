@@ -1,7 +1,7 @@
 /**
  * This one answers the Common Names question I found on TestDome
  */
-package us.deans.javastudy.operations;
+package us.deans.javastudy.operations.core10;
 
 import java.util.HashSet;
 

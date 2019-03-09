@@ -1,7 +1,7 @@
-package main;
+package us.deans.javastudy.driver;
 
-import operations.*;
-import support.LogPrinter;
+import us.deans.javastudy.operations.core10.*;
+import us.deans.javastudy.support.LogPrinter;
 
 public class Application {
 
@@ -114,17 +114,21 @@ public class Application {
 		// CrudMap map = new CrudMap();
 		printBreak();
 
-
 		// depth first
 		printBreak();
 
-		
 		// Lambda Expressions
 		lp.printHead("Lambda Expression...");
 		LambdaVsMethod lx = new LambdaVsMethod();
 		lx.start();
 		printBreak();
-
+		
+		// Executors
+		lp.printHead("Executor Operation...");
+		ExecutorOperation xo = new ExecutorOperation();
+		xo.start(2);
+		printBreak();
+		
 		
 		// program complete
 		lp.printHead("Testing Complete :)");

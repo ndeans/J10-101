@@ -23,7 +23,7 @@ public class LogPrinter {
 	}
 	
 	public void printMsg(String msg) {
-		System.out.println("... " + msg);
+		System.out.println(".. " + msg);
 	}
 	
 }

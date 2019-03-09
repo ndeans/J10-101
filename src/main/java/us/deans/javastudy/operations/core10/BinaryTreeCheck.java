@@ -1,12 +1,9 @@
-package us.deans.javastudy.operations;
+package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
 import us.deans.javastudy.support.LogPrinter;
 
 public class BinaryTreeCheck extends BaseOperation {
-
-	LogPrinter lp;
-	
 	
 	class Node {
 		public int value;
@@ -20,10 +17,13 @@ public class BinaryTreeCheck extends BaseOperation {
 	}
 	
 	
-	public boolean contains(Node root, int value) {
+	public String contains(Node root, int value) {
+		
+		// String rtn = "false";
 		
 		if (root.value==value || root.left.value == value || root.right.value == value) 
-			return true;
+			return "true";
+			// return true;
 		
 /*		if (root.value > value) 
 			return contains(root.left, value);
@@ -31,7 +31,7 @@ public class BinaryTreeCheck extends BaseOperation {
 		if (root.value < value) 
 			return contains(root.right, value);
 */		
-		else return false;
+		else return "false";
 	}
 	
 	
@@ -40,11 +40,10 @@ public class BinaryTreeCheck extends BaseOperation {
 		Node n1 = new Node(1, null, null);
         Node n3 = new Node(3, null, null);
         Node n2 = new Node(2, n1, n3);
-        
-        System.out.println(contains(n2, 3));
-        
-		
+       
+        lp.printMsg(contains(n2, 3));
+  
+       
 	}
-	
 	
 }

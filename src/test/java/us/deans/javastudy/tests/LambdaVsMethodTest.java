@@ -6,8 +6,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import us.deans.javastudy.operations.core10.LambdaVsMethod;
 import us.deans.javastudy.support.LogPrinter;
-import us.deans.javastudy.operations.LambdaVsMethod;
 
 class LambdaVsMethodTest {
 
