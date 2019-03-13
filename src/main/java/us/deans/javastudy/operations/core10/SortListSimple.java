@@ -14,7 +14,6 @@ public class SortListSimple {
 		alist.add("red");
 		alist.add("green");
 		alist.add("blue");
-		
 	
 	}
 	

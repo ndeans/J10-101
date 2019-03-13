@@ -5,21 +5,24 @@ import us.deans.javastudy.support.LogPrinter;
 
 public class Application {
 
+	LogPrinter lp;
+	
 	public static void main(String[] args) {
 
 		LogPrinter lp  = LogPrinter.getInstance();
+		printBreak();
 		
 		// variable swap
 		lp.printHead("Variable Swap...");
 		VarSwap vs = new VarSwap();
 		vs.swap(13, 7);
-		lp.printBreak();
+		printBreak();
 		
 		// duplicate chars
 		lp.printHead("Print Duplicate Characters... ");
 		DupChars dc = new DupChars();
 		dc.printDupes("vacation");
-		lp.printBreak();
+		printBreak();
 		
 		// get a Singleton
 		lp.printHead("Get Singleton Instance... ");
@@ -33,16 +36,20 @@ public class Application {
 		fib.sequenceFor(10);
 		System.out.println();
 		fib.sequenceWhile(10);
+		System.out.println();
 		printBreak();
 		
 		// create an ArrayList of Strings representing colors and sort it.
-		lp.printHead("Create an ArrayList of Strings representing colors and sort by default...");
+		lp.printHead("Sorting an ArrayList of Strings...");
 		SortListSimple slist_b = new SortListSimple();
-		slist_b.printList(); printBreak();
+		slist_b.printList(); 
+		System.out.println();
 		slist_b.sortList();
-		slist_b.printList(); printBreak();
-		slist_b = null;
-		
+		slist_b.printList(); 
+		System.out.println();
+		slist_b = null;		
+		printBreak();
+
 		// create a list of color records and sort by level.
 		lp.printHead("Create an ArrayList of custom objects (ColorDef) and sort by Level...");
 		SortListComparator slist_c = new SortListComparator();
@@ -56,7 +63,6 @@ public class Application {
 		// now play with Linked Lists
 		lp.printHead("Create and populate a LinkedList...");
 		OpLinkedList llist = new OpLinkedList();
-		printBreak();
 		llist.getStatus();
 		llist = null;
 		printBreak();
@@ -64,7 +70,8 @@ public class Application {
 		// now play with HashMaps
 		lp.printHead("Create and populate a HashMap...");
 		OpHashMap hmap = new OpHashMap();
-		
+		hmap.start();
+		hmap = null;
 		printBreak();
 		
 		// Find Common Names between two String arrays
@@ -109,12 +116,26 @@ public class Application {
 		fnia.start();
 		printBreak();
 		
+		// Write to CSV File
+		lp.printHead("Write a map to a CSV file...");
+		OpCSVWrite writer = new OpCSVWrite();
+		writer.start();
+		printBreak();
+		
+		// Read CSV file
+		lp.printHead("Read a CVSV file...");
+		OpCSVRead reader = new OpCSVRead();
+		reader.start();
+		printBreak();
+		
 		// HashMap CRUD
 		lp.printHead("HashMap CRUD");
 		// CrudMap map = new CrudMap();
 		printBreak();
 
 		// depth first
+		lp.printHead("Depth First");
+		// developing this on the other IDE
 		printBreak();
 
 		// Lambda Expressions
@@ -129,16 +150,29 @@ public class Application {
 		xo.start(2);
 		printBreak();
 		
+		// Logging API
+		lp.printHead("Logging API Operation...");
+		LoggingAPI lop = new LoggingAPI();
+		lop.start();
+		printBreak();
+
+		// Stream API
+		lp.printHead("Stream API (Java 8)...");
+		StreamAPI str1 = new StreamAPI();
+		str1.start();
+		printBreak();
+				
 		
 		// program complete
 		lp.printHead("Testing Complete :)");
 		
 	}
 	
-	private static void printBreak() {
-		System.out.println(); System.out.println();
-	}
+	public static void printBreak() {
+		
+		LogPrinter lp  = LogPrinter.getInstance();
+		lp.printBreak(1);
 
-	
+	}
 
 }

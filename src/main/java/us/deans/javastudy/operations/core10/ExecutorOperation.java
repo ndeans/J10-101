@@ -1,3 +1,6 @@
+/*
+ *  More or less taken from https://www.baeldung.com/java-executor-service-tutorial
+ */
 package us.deans.javastudy.operations.core10;
 
 import java.util.List;

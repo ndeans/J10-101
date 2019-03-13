@@ -10,7 +10,7 @@ import us.deans.javastudy.support.DsCustomer;
 
 public class OpCSVWrite extends BaseOperation {
 
-    private static final String CSV_HEADER = "id,name,address.age";
+    private static final String CSV_HEADER = "id,name,address,age";
 
     List<DsCustomer> customers = Arrays.asList(
             new DsCustomer("1", "Jack Smith", "Massachusettes", 23),
@@ -22,6 +22,10 @@ public class OpCSVWrite extends BaseOperation {
     FileWriter fw = null;
     
     public OpCSVWrite() {
+    }
+    
+    @Override
+    public void start() {
 
         try {
 

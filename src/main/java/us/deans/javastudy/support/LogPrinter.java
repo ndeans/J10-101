@@ -19,7 +19,14 @@ public class LogPrinter {
 	}
 	
 	public void printBreak() {
-		System.out.println(); System.out.println();
+		System.out.println(); 
+		System.out.println();
+	}
+	
+	public void printBreak(int opt) {
+		String line = "------------------------------------------------------------------------------------";
+		System.out.println(line); 
+		System.out.println();
 	}
 	
 	public void printMsg(String msg) {

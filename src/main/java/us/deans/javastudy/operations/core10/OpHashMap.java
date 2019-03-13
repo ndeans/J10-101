@@ -2,10 +2,11 @@ package us.deans.javastudy.operations.core10;
 
 import java.util.HashMap;
 import java.util.Map;
+import us.deans.javastudy.base.BaseOperation;
 
-public class OpHashMap {
-	
-	public OpHashMap() {
+public class OpHashMap extends BaseOperation {
+
+	public void start() {
 		
 		Map<String, Integer> hmap = new HashMap<>();
 		
@@ -19,8 +20,6 @@ public class OpHashMap {
 		
 		System.out.println(hmap);
 
-		
-		
 	}
 	
 	

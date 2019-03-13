@@ -6,10 +6,12 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import us.deans.javastudy.operations.core10.LambdaVsMethod;
+
+import us.deans.javastudy.operations.core10.StreamAPI;
 import us.deans.javastudy.support.LogPrinter;
 
-class LambdaVsMethodTest {
+
+class StreamAPITest {
 
 	LogPrinter lp;
 	
@@ -25,18 +27,13 @@ class LambdaVsMethodTest {
 	
 	@Test
 	void test() {
-	
-		lp.printHead("Lambda Expression...");
-		LambdaVsMethod lx = new LambdaVsMethod();
-				
-		int x1 = lx.strComparator.compare("hello", "world");
-		lp.printMsg("method comparison: " + x1);
-		assertEquals(x1, -15);
-		
-		int x2 = lx.strComparatorLambda.compare("hello", "world");
-		lp.printMsg("lambda comparison: " + x2);
-		assertEquals(x2, -15);
+	 	
+		lp.printHead("Stream API ...");
+		StreamAPI str1 = new StreamAPI();
+		str1.start();
+		assertTrue(true);
 		
 	}
 
+	
 }

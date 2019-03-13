@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OpCVSRead extends BaseOperation {
+public class OpCSVRead extends BaseOperation {
 
     private static final int CUSTOMER_ID_IDX = 0;
     private static final int CUSTOMER_NAME_IDX = 1;
