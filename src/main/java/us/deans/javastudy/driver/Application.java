@@ -2,6 +2,7 @@ package us.deans.javastudy.driver;
 
 import us.deans.javastudy.operations.core10.*;
 import us.deans.javastudy.support.LogPrinter;
+import us.deans.javastudy.support.WordWrapException;
 
 public class Application {
 
@@ -162,6 +163,23 @@ public class Application {
 		str1.start();
 		printBreak();
 				
+		// Wordwrap problem
+		lp.printHead("WordWrap...");
+		OpWordWrap ww = new OpWordWrap();
+		String text1 = "Four score and seven years ago our fathers brought forth upon this continent a new nation, conceived in liberty and dedicated to the proposition that all men are created equal";
+		try {
+			ww.under13(text1);
+		} catch (WordWrapException e) {
+			e.printStackTrace();
+		}
+		printBreak();
+		
+		// Raise To Power Of
+		
+		lp.printHead("Raise to Power Of...");
+		OpRaisePower p = new OpRaisePower();
+		p.raisePower(2, 3);
+		printBreak();
 		
 		// program complete
 		lp.printHead("Testing Complete :)");
