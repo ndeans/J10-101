@@ -2,6 +2,8 @@ package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
 import us.deans.javastudy.support.DiConstructor;
+import us.deans.javastudy.support.DiInterface;
+import us.deans.javastudy.support.DiSetter;
 import us.deans.javastudy.support.GreetingService;
 
 /**
@@ -39,12 +41,20 @@ public class OpHelloDI extends BaseOperation {
 				break;
 			case 2:
 				// setter injection
+				DiSetter dis = new DiSetter();
+				dis.setService(gs);
+				greeting = dis.hello();
+				lp.printMsg("[injection: setter] " + greeting);
+				break;
 			case 3:
 				// interface injection
-				
+				DiInterface dii = new DiInterface();
+				dii.setService(gs);
+				greeting = dii.hello();
+				lp.printMsg("[injection: interface] " + greeting);
+				break;
 		}
 		
-
 
 	}
 	

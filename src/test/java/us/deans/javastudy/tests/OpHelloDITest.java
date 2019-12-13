@@ -2,7 +2,6 @@ package us.deans.javastudy.tests;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import us.deans.javastudy.operations.core10.OpHelloDI;
@@ -30,18 +29,20 @@ public class OpHelloDITest {
 	
 	@Test
 	public void testOpHelloDI_constructor() {
-		
 		op.start(1);
 		assertTrue(op.getGreeting() == test);
 	}
 	
+	@Test
 	public void testOpHelloDI_setter() {
-		
 		op.start(2);
-		assertTrue(true);
+		assertTrue(op.getGreeting() == test);
 	}
 	
-	
-	
+	@Test
+	public void testOpHelloDI_interface() {
+		op.start(3);
+		assertTrue(op.getGreeting() == test);
+	}
 	
 }
