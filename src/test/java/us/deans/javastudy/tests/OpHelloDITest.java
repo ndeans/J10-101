@@ -23,7 +23,6 @@ public class OpHelloDITest {
 	public void testOpHelloDI_noinjection() {
 		op.start(0);
 		msg = op.getGreeting();
-		
 		assertTrue(msg == test);
 	}
 	

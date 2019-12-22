@@ -1,6 +1,8 @@
 package us.deans.javastudy.driver;
 
 import us.deans.javastudy.operations.core10.*;
+import us.deans.javastudy.support.DiConstructor;
+import us.deans.javastudy.support.GreetingService;
 import us.deans.javastudy.support.LogPrinter;
 import us.deans.javastudy.support.WordWrapException;
 
@@ -175,10 +177,27 @@ public class Application {
 		printBreak();
 		
 		// Raise To Power Of
-		
 		lp.printHead("Raise to Power Of...");
 		OpRaisePower p = new OpRaisePower();
 		p.raisePower(2, 3);
+		printBreak();
+		
+		
+		// Dependency Injection: Java/Constructor
+		lp.printHead("Dependency Injection: Java/Constructor...");
+		OpHelloDI op = new OpHelloDI();
+		
+		op.start(1);
+		String greeting = op.getGreeting();
+		lp.printMsg(greeting);
+		printBreak();
+		
+		// Dependency Injection: Java/Setter Method
+		lp.printHead("Dependency Injection: Java/Setter Method...");
+		
+		op.start(2);
+		greeting = op.getGreeting();
+		lp.printMsg(greeting);
 		printBreak();
 		
 		// program complete
