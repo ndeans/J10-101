@@ -177,7 +177,7 @@ public class Application {
 		printBreak();
 		
 		// Raise To Power Of
-		lp.printHead("Raise to Power Of...");
+		lp.printHead("Raise to Power Of... (Comcast WB)");
 		OpRaisePower p = new OpRaisePower();
 		p.raisePower(2, 3);
 		printBreak();
@@ -186,19 +186,27 @@ public class Application {
 		// Dependency Injection: Java/Constructor
 		lp.printHead("Dependency Injection: Java/Constructor...");
 		OpHelloDI op = new OpHelloDI();
-		
 		op.start(1);
 		String greeting = op.getGreeting();
 		lp.printMsg(greeting);
 		printBreak();
 		
+		
 		// Dependency Injection: Java/Setter Method
 		lp.printHead("Dependency Injection: Java/Setter Method...");
-		
 		op.start(2);
 		greeting = op.getGreeting();
 		lp.printMsg(greeting);
 		printBreak();
+
+		// Adding the digits of a number
+		lp.printHead("Adding the digits of 12,345 (Xybion WB)");
+		OpAddDigits ad = new OpAddDigits();
+		int s = ad.add(12345);
+		lp.printMsg("sum of digits = " + s);
+		printBreak();
+		
+		
 		
 		// program complete
 		lp.printHead("Testing Complete :)");
