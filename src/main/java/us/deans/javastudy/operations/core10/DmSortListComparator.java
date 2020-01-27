@@ -7,11 +7,11 @@ import java.util.Comparator;
 import us.deans.javastudy.support.ColorDef;
 import us.deans.javastudy.support.SortByLevel;
 
-public class SortListComparator {
+public class DmSortListComparator {
 
 	ArrayList<ColorDef> alist;
 	
-	public SortListComparator() { 
+	public DmSortListComparator() { 
 		
 		// create and populate the list
 		ColorDef rec;

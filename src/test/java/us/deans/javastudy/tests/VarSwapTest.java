@@ -6,7 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import us.deans.javastudy.operations.core10.VarSwap;
+import us.deans.javastudy.operations.core10.DmVarSwap;
 import us.deans.javastudy.support.LogPrinter;
 
 class VarSwapTest {
@@ -27,7 +27,7 @@ class VarSwapTest {
 	@Test
 	void testSwap() {
 		lp.printHead("Test: Variable Swap...");
-		VarSwap vs = new VarSwap();
+		DmVarSwap vs = new DmVarSwap();
 		vs.swap(13, 7);
 		lp.printBreak();
 		

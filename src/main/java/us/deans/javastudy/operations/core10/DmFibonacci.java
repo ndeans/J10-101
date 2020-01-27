@@ -1,8 +1,8 @@
 package us.deans.javastudy.operations.core10;
 
-public class Fibonacci {
+public class DmFibonacci {
 
-	public Fibonacci() { }
+	public DmFibonacci() { }
 	
 	public void sequenceFor(int loop) {
 		

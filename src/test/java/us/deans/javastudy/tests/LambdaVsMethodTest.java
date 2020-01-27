@@ -6,7 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import us.deans.javastudy.operations.core10.LambdaVsMethod;
+import us.deans.javastudy.operations.core10.DmLambdaVsMethod;
 import us.deans.javastudy.support.LogPrinter;
 
 class LambdaVsMethodTest {
@@ -27,7 +27,7 @@ class LambdaVsMethodTest {
 	void test() {
 	
 		lp.printHead("Lambda Expression...");
-		LambdaVsMethod lx = new LambdaVsMethod();
+		DmLambdaVsMethod lx = new DmLambdaVsMethod();
 				
 		int x1 = lx.strComparator.compare("hello", "world");
 		lp.printMsg("method comparison: " + x1);

@@ -19,7 +19,7 @@ import javax.xml.stream.events.XMLEvent;
 import us.deans.javastudy.base.BaseOperation;
 import us.deans.javastudy.model.DataXMLFood;
 
-public class ParseXMLBreakfastMenu extends BaseOperation {
+public class DmParseXMLBreakfastMenu extends BaseOperation {
 
 	private static final String ITEM = "food";
 	private static final String ID = "id";

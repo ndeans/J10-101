@@ -3,7 +3,7 @@ package us.deans.javastudy.operations.core10;
 import java.util.Comparator;
 import us.deans.javastudy.base.BaseOperation;
 
-public class LambdaVsMethod extends BaseOperation {
+public class DmLambdaVsMethod extends BaseOperation {
 
 	public Comparator<String> strComparator = new Comparator<String>() {
 		@Override

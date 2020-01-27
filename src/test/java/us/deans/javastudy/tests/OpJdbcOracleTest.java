@@ -18,7 +18,4 @@ public class OpJdbcOracleTest {
 		assertTrue(list.size() > 0);	
 		
 	}
-	
-	
-	
 }

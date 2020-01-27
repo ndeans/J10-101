@@ -1,10 +1,10 @@
 package us.deans.javastudy.driver;
 
+import java.util.List;
+
 import us.deans.javastudy.operations.core10.*;
-import us.deans.javastudy.operations.core10.patterns.DiConstructor;
 import us.deans.javastudy.operations.core10.patterns.OpHelloDI;
 import us.deans.javastudy.operations.core10.patterns.Singleton;
-import us.deans.javastudy.support.GreetingService;
 import us.deans.javastudy.support.LogPrinter;
 import us.deans.javastudy.support.WordWrapException;
 
@@ -19,13 +19,13 @@ public class Application {
 		
 		// variable swap
 		lp.printHead("Variable Swap...");
-		VarSwap vs = new VarSwap();
+		DmVarSwap vs = new DmVarSwap();
 		vs.swap(13, 7);
 		printBreak();
 		
 		// duplicate chars
 		lp.printHead("Print Duplicate Characters... ");
-		DupChars dc = new DupChars();
+		DmDupChars dc = new DmDupChars();
 		dc.printDupes("vacation");
 		printBreak();
 		
@@ -37,7 +37,7 @@ public class Application {
 		
 		// print fibonacci sequence
 		lp.printHead("Print Fibonacci Sequence... ");
-		Fibonacci fib = new Fibonacci();
+		DmFibonacci fib = new DmFibonacci();
 		fib.sequenceFor(10);
 		System.out.println();
 		fib.sequenceWhile(10);
@@ -46,7 +46,7 @@ public class Application {
 		
 		// create an ArrayList of Strings representing colors and sort it.
 		lp.printHead("Sorting an ArrayList of Strings...");
-		SortListSimple slist_b = new SortListSimple();
+		DmSortListSimple slist_b = new DmSortListSimple();
 		slist_b.printList(); 
 		System.out.println();
 		slist_b.sortList();
@@ -57,7 +57,7 @@ public class Application {
 
 		// create a list of color records and sort by level.
 		lp.printHead("Create an ArrayList of custom objects (ColorDef) and sort by Level...");
-		SortListComparator slist_c = new SortListComparator();
+		DmSortListComparator slist_c = new DmSortListComparator();
 		slist_c.sortListByLevel(); printBreak();
 		
 		// sort that list of 
@@ -81,43 +81,43 @@ public class Application {
 		
 		// Find Common Names between two String arrays
 		lp.printHead("Find common names between two String arrays...");
-		CommonStrings cs = new CommonStrings();
+		DmCommonStrings cs = new DmCommonStrings();
 		cs.start();
 		printBreak();
 		
 		// Check if word is a palindrome
 		lp.printHead("Check if word is a palindrome...");
-		Palindrome c4p = new Palindrome();
+		DmPalindrome c4p = new DmPalindrome();
 		c4p.start();
 		printBreak();
 		
 		// binary search tree
 		lp.printHead("Binary Tree Check...");
-		BinaryTreeCheck btc = new BinaryTreeCheck();
+		DmBinaryTreeCheck btc = new DmBinaryTreeCheck();
 		btc.start();
 		printBreak();
 		
 		// averages
 		lp.printHead("Print averages (integers to doubles)...");
-		Averages a = new Averages();
+		DmAverages a = new DmAverages();
 		a.start();
 		printBreak();
 		
 		// generics
 		lp.printHead("Advantages of Generics???");
-		GenericOrNot gen = new GenericOrNot();
+		DmGenericOrNot gen = new DmGenericOrNot();
 		gen.start();
 		printBreak();
 		
 		// parsing XML with STAX (Java Streaming API for XML)
 		lp.printHead("Parsing XML with STAX...");
-		ParseXMLBreakfastMenu stax = new ParseXMLBreakfastMenu();
+		DmParseXMLBreakfastMenu stax = new DmParseXMLBreakfastMenu();
 		stax.start();
 		printBreak();
 		
 		// Check for number in array
 		lp.printHead("Check for Integer in Array");
-		FindNumberInArray fnia = new FindNumberInArray();
+		DmFindNumberInArray fnia = new DmFindNumberInArray();
 		fnia.start();
 		printBreak();
 		
@@ -145,19 +145,19 @@ public class Application {
 
 		// Lambda Expressions
 		lp.printHead("Lambda Expression...");
-		LambdaVsMethod lx = new LambdaVsMethod();
+		DmLambdaVsMethod lx = new DmLambdaVsMethod();
 		lx.start();
 		printBreak();
 		
 		// Executors
 		lp.printHead("Executor Operation...");
-		ExecutorOperation xo = new ExecutorOperation();
+		DmExecutorOperation xo = new DmExecutorOperation();
 		xo.start(2);
 		printBreak();
 		
 		// Logging API
 		lp.printHead("Logging API Operation...");
-		LoggingAPI lop = new LoggingAPI();
+		DmLoggingAPI lop = new DmLoggingAPI();
 		lop.start();
 		printBreak();
 
@@ -208,6 +208,13 @@ public class Application {
 		lp.printMsg("sum of digits = " + s);
 		printBreak();
 		
+		// Reading Data from Oracle XE 18c
+		lp.printHead("Top Ten - Reading Data from Oracle XE 18c");
+		OpJdbcOracle oracle = new OpJdbcOracle();
+		List<String> list = oracle.getListOfRecords();
+		System.out.println();
+		lp.printMsg(list.toString());
+		printBreak();
 		
 		// program complete
 		lp.printHead("Testing Complete :)");

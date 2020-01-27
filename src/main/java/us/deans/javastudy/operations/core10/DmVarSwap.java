@@ -1,8 +1,8 @@
 package us.deans.javastudy.operations.core10;
 
-public class VarSwap {
+public class DmVarSwap {
 
-	public VarSwap() {
+	public DmVarSwap() {
 	
 	}
 	

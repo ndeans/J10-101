@@ -2,9 +2,9 @@ package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
 
-public class DupChars extends BaseOperation {
+public class DmDupChars extends BaseOperation {
 
-	public DupChars() {
+	public DmDupChars() {
 	}
 	
 	

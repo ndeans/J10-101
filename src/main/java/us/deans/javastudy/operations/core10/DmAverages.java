@@ -2,7 +2,7 @@ package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
 
-public class Averages extends BaseOperation {
+public class DmAverages extends BaseOperation {
 
     public static double average(int a, int b) {
         int sum = a + b;

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import us.deans.javastudy.operations.core10.ExecutorOperation;
+import us.deans.javastudy.operations.core10.DmExecutorOperation;
 import us.deans.javastudy.support.LogPrinter;
 
 class ExecutorOperationTest {
@@ -29,7 +29,7 @@ class ExecutorOperationTest {
 		
 		lp.printHead("Executor Operation...");
 		
-		ExecutorOperation xo = new ExecutorOperation();
+		DmExecutorOperation xo = new DmExecutorOperation();
 		xo.start(1);
 		
 		fail("Not yet implemented");

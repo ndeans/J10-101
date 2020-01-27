@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import us.deans.javastudy.operations.core10.CommonStrings;
+import us.deans.javastudy.operations.core10.DmCommonStrings;
 import us.deans.javastudy.support.LogPrinter;
 
 class CommonStringsTest {
@@ -17,7 +17,7 @@ class CommonStringsTest {
 		lp = LogPrinter.getInstance();
 		lp.printHead("Test: Find Common Strings between Two String Arrays...");
 		
-		CommonStrings cs = new CommonStrings();
+		DmCommonStrings cs = new DmCommonStrings();
 		cs.start();
 		
 		// fail("Not yet implemented");

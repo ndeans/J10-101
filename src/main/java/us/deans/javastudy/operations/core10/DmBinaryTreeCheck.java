@@ -3,7 +3,7 @@ package us.deans.javastudy.operations.core10;
 import us.deans.javastudy.base.BaseOperation;
 import us.deans.javastudy.support.LogPrinter;
 
-public class BinaryTreeCheck extends BaseOperation {
+public class DmBinaryTreeCheck extends BaseOperation {
 	
 	class Node {
 		public int value;

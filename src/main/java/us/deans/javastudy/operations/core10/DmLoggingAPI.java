@@ -5,9 +5,9 @@ import java.util.logging.Logger;
 
 import us.deans.javastudy.base.BaseOperation;
 
-public class LoggingAPI extends BaseOperation {
+public class DmLoggingAPI extends BaseOperation {
 
-	private static final Logger logger = Logger.getLogger(LoggingAPI.class.getName());
+	private static final Logger logger = Logger.getLogger(DmLoggingAPI.class.getName());
 	
 	@Override
 	public void start() {

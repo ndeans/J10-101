@@ -3,11 +3,11 @@ package us.deans.javastudy.operations.core10;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class SortListSimple {
+public class DmSortListSimple {
 
 	ArrayList<String> alist;
 	
-	public SortListSimple() { 
+	public DmSortListSimple() { 
 		
 		alist = new ArrayList<String>();
 	

@@ -13,7 +13,7 @@ import us.deans.javastudy.base.BaseOperation;
  *
  */
 
-public class GenericOrNot extends BaseOperation {
+public class DmGenericOrNot extends BaseOperation {
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public void start() {

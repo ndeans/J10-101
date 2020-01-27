@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 import us.deans.javastudy.base.BaseOperation;
 
-public class ExecutorOperation extends BaseOperation {
+public class DmExecutorOperation extends BaseOperation {
 
 	ExecutorService executor;
 	

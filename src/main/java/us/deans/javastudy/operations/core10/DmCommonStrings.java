@@ -7,12 +7,12 @@ import java.util.HashSet;
 
 import us.deans.javastudy.base.BaseOperation;
 
-public class CommonStrings extends BaseOperation {
+public class DmCommonStrings extends BaseOperation {
 
 	String[] names1 = new String[] {"Ava", "Emma", "Olivia"};
     String[] names2 = new String[] {"Olivia", "Sophia", "Emma"};
     
-    public CommonStrings() {
+    public DmCommonStrings() {
     }
 
     public void start() {

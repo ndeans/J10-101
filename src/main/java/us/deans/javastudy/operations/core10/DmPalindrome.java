@@ -1,6 +1,6 @@
 package us.deans.javastudy.operations.core10;
 
-public class Palindrome {
+public class DmPalindrome {
 	
 	public void start() {
 		System.out.println(isPalindrome("Deleveled"));

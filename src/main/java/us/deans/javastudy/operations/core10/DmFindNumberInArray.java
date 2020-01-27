@@ -7,7 +7,7 @@ import java.util.Set;
 
 import us.deans.javastudy.support.ArrayGenerator;
 
-public class FindNumberInArray {
+public class DmFindNumberInArray {
 
 	
 	public void start() {
