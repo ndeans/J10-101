@@ -2,6 +2,8 @@ package us.deans.javastudy.tests;
 
 import static org.junit.Assert.assertTrue;
 
+import java.util.List;
+
 import org.junit.Test;
 
 import us.deans.javastudy.operations.core10.OpJdbcOracle;
@@ -12,8 +14,8 @@ public class OpJdbcOracleTest {
 	public void testConnection() {
 		
 		OpJdbcOracle oracle = new OpJdbcOracle();
-		System.out.println(oracle.getMessage());
-		assertTrue(oracle.getMessage().length() > 0);	
+		List<String> list = oracle.getListOfRecords();
+		assertTrue(list.size() > 0);	
 		
 	}
 	

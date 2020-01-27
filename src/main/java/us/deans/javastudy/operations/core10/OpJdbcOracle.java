@@ -1,26 +1,60 @@
 package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
+import us.deans.javastudy.operations.core10.DataAdapter;
 import java.sql.*;
+import java.util.LinkedList;
+import java.util.List;
 
-public class OpJdbcOracle extends BaseOperation {
+public class OpJdbcOracle extends BaseOperation implements DataAdapter {
 
 	Connection conn;
 	
 	public OpJdbcOracle() {	
 	
 		try {
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@XEPDB1", "system", "!code");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/XEPDB1", "system", "!code"); 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
 	
 	public String getMessage() {
 		return "Hello World";
 	}
+	
+	public List<String> getListOfRecords() {
+		
+		LinkedList<String> list = new LinkedList<String>();
+
+		try {
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery("select * from hr.top_ten_list");
+			
+			while (rs.next()) {
+				
+				DataRecord data = new DataRecord();
+				data.FIRST_NAME = rs.getString(1);
+				data.LAST_NAME = rs.getString(2);
+				data.SALARY = rs.getLong(3);
+				data.DEPARTMENT_NAME = rs.getString(4);
+				data.CITY = rs.getString(5);
+				
+				String record = data.getString();
+				lp.printMsg(record);
+				list.add(record);
+				
+				data = null;
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return list;
+		
+	}
+	
 	
 	
 }
