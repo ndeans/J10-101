@@ -6,8 +6,13 @@ import java.util.Arrays;
 import java.util.List;
 
 import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.support.DsCustomer;
+import us.deans.javastudy.model.DsCustomer;
 
+/**
+ * @author ndeans
+ * @version 1.0
+ * 
+ */
 public class OpCSVWrite extends BaseOperation {
 
     private static final String CSV_HEADER = "id,name,address,age";

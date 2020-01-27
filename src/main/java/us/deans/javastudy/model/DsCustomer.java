@@ -1,4 +1,4 @@
-package us.deans.javastudy.support;
+package us.deans.javastudy.model;
 
 public class DsCustomer {
 

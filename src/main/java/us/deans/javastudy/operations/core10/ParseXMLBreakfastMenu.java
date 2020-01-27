@@ -17,7 +17,7 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
 import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.support.DataXMLFood;
+import us.deans.javastudy.model.DataXMLFood;
 
 public class ParseXMLBreakfastMenu extends BaseOperation {
 

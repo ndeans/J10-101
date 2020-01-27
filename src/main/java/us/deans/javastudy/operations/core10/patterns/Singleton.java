@@ -1,4 +1,4 @@
-package us.deans.javastudy.operations.core10;
+package us.deans.javastudy.operations.core10.patterns;
 
 public class Singleton {
 

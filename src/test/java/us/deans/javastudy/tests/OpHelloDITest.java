@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.Test;
 
-import us.deans.javastudy.operations.core10.OpHelloDI;
+import us.deans.javastudy.operations.core10.patterns.OpHelloDI;
 
 /**
  * Unit test for the Dependency Injection Operation

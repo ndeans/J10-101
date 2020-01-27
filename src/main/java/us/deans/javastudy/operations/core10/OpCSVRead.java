@@ -1,7 +1,8 @@
 package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.support.DsCustomer;
+import us.deans.javastudy.model.DsCustomer;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

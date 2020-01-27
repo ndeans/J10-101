@@ -1,7 +1,9 @@
 package us.deans.javastudy.driver;
 
 import us.deans.javastudy.operations.core10.*;
-import us.deans.javastudy.support.DiConstructor;
+import us.deans.javastudy.operations.core10.patterns.DiConstructor;
+import us.deans.javastudy.operations.core10.patterns.OpHelloDI;
+import us.deans.javastudy.operations.core10.patterns.Singleton;
 import us.deans.javastudy.support.GreetingService;
 import us.deans.javastudy.support.LogPrinter;
 import us.deans.javastudy.support.WordWrapException;
@@ -205,7 +207,6 @@ public class Application {
 		int s = ad.add(12345);
 		lp.printMsg("sum of digits = " + s);
 		printBreak();
-		
 		
 		
 		// program complete

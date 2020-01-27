@@ -1,9 +1,6 @@
-package us.deans.javastudy.operations.core10;
+package us.deans.javastudy.operations.core10.patterns;
 
 import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.support.DiConstructor;
-import us.deans.javastudy.support.DiInterface;
-import us.deans.javastudy.support.DiSetter;
 import us.deans.javastudy.support.GreetingService;
 
 /**
