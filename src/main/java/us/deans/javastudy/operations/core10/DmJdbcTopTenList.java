@@ -1,16 +1,22 @@
 package us.deans.javastudy.operations.core10;
 
-import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.operations.core10.DataAdapter;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
-public class OpJdbcOracle extends BaseOperation implements DataAdapter {
+import us.deans.javastudy.base.BaseOperation;
+import us.deans.javastudy.operations.core10.IDataAdapter_TopTen_List;
+
+
+public class DmJdbcTopTenList extends BaseOperation implements IDataAdapter_TopTen_List {
 
 	Connection conn;
 	
-	public OpJdbcOracle() {	
+	public DmJdbcTopTenList() {	
 	
 		try {
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/XEPDB1", "system", "!code"); 
@@ -23,6 +29,7 @@ public class OpJdbcOracle extends BaseOperation implements DataAdapter {
 		return "Hello World";
 	}
 	
+	@Override
 	public List<String> getListOfRecords() {
 		
 		LinkedList<String> list = new LinkedList<String>();
@@ -54,7 +61,5 @@ public class OpJdbcOracle extends BaseOperation implements DataAdapter {
 		return list;
 		
 	}
-	
-	
 	
 }

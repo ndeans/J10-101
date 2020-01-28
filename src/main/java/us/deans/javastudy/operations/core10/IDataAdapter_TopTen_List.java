@@ -2,7 +2,7 @@ package us.deans.javastudy.operations.core10;
 
 import java.util.List;
 
-public interface DataAdapter {
+public interface IDataAdapter_TopTen_List {
 
 	public String getMessage();
 	public List<String> getListOfRecords();
@@ -15,13 +15,7 @@ public interface DataAdapter {
 		public String CITY;	
 	
 		protected String getString() {
-			
-			return FIRST_NAME + ", " + LAST_NAME + ", " + SALARY + ", " + DEPARTMENT_NAME + ", " + CITY;
-			
+			return FIRST_NAME + ", " + LAST_NAME + ", " + SALARY + ", " + DEPARTMENT_NAME + ", " + CITY + "\r";
 		}
 	}
-	
-	
-	
-	
 }

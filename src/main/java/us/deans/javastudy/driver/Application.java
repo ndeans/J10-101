@@ -210,7 +210,7 @@ public class Application {
 		
 		// Reading Data from Oracle XE 18c
 		lp.printHead("Top Ten - Reading Data from Oracle XE 18c");
-		OpJdbcOracle oracle = new OpJdbcOracle();
+		DmJdbcTopTenList oracle = new DmJdbcTopTenList();
 		List<String> list = oracle.getListOfRecords();
 		System.out.println();
 		lp.printMsg(list.toString());
