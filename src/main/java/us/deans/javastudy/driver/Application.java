@@ -1,6 +1,9 @@
 package us.deans.javastudy.driver;
 
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import us.deans.javastudy.operations.core10.*;
 import us.deans.javastudy.operations.core10.patterns.OpHelloDI;
@@ -60,23 +63,23 @@ public class Application {
 		DmSortListComparator slist_c = new DmSortListComparator();
 		slist_c.sortListByLevel(); printBreak();
 		
-		// sort that list of 
+		// sort that list of colors
 		lp.printHead("Sort the list by Color...");
 		slist_c.sortListByColor();
 		printBreak();
 		
 		// now play with Linked Lists
 		lp.printHead("Create and populate a LinkedList...");
-		OpLinkedList llist = new OpLinkedList();
-		llist.getStatus();
-		llist = null;
+		OpLinkedList listMgr = new OpLinkedList();
+		listMgr.getStatus();
+		listMgr = null;
 		printBreak();
 		
 		// now play with HashMaps
 		lp.printHead("Create and populate a HashMap...");
-		OpHashMap hmap = new OpHashMap();
-		hmap.start();
-		hmap = null;
+		OpHashMap hmapMgr = new OpHashMap();
+		hmapMgr.start();
+		hmapMgr = null;
 		printBreak();
 		
 		// Find Common Names between two String arrays
@@ -209,15 +212,32 @@ public class Application {
 		printBreak();
 		
 		// Reading Data from Oracle XE 18c
-		lp.printHead("Top Ten - Reading Data from Oracle XE 18c");
-		DmJdbcTopTenList oracle = new DmJdbcTopTenList();
-		List<String> list = oracle.getListOfRecords();
+		lp.printHead("Top Ten - Reading Data from Oracle XE 18c - Using Linked List");
+		DmJdbcTopTenLinkedList jdbc1 = new DmJdbcTopTenLinkedList();
+		List<String> llist1 = jdbc1.getListOfRecords();
 		System.out.println();
-		lp.printMsg(list.toString());
+		lp.printMsg(llist1.toString());
 		printBreak();
+		
+		lp.printHead("Top Ten - Reading Data from Oracle XE 18c - Using Array List");		
+		DmJdbcTopTenArrayList jdbc2 = new DmJdbcTopTenArrayList();
+		List<String> alist = jdbc2.getListOfRecords();
+		System.out.println();
+		lp.printMsg(alist.toString());
+		printBreak();
+		
+		lp.printHead("Top Ten - Reading Data from Oracle XE 18c - Using Hash Map");	
+		DmJdbcTopTenMap jdbc3 = new DmJdbcTopTenMap();
+		Map<Integer, String> hmap = jdbc3.getMapOfRecords();
+		System.out.println();
+		lp.printMsg(hmap.toString());
+		printBreak();		
+		
+		
 		
 		// program complete
 		lp.printHead("Testing Complete :)");
+		
 		
 	}
 	

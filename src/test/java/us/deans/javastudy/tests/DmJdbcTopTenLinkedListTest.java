@@ -6,17 +6,17 @@ import java.util.List;
 
 import org.junit.Test;
 
-import us.deans.javastudy.operations.core10.DmJdbcTopTenList;
+import us.deans.javastudy.operations.core10.DmJdbcTopTenLinkedList;
 import us.deans.javastudy.support.LogPrinter;
 
-public class DmJdbcTopTenListTest {
+public class DmJdbcTopTenLinkedListTest {
 
 	LogPrinter lp;
 	
 	@Test
 	public void testConnection() {
 		
-		DmJdbcTopTenList oracle = new DmJdbcTopTenList();
+		DmJdbcTopTenLinkedList oracle = new DmJdbcTopTenLinkedList();
 		List<String> list = oracle.getListOfRecords();
 		
 		String test = list.toString();

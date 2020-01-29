@@ -12,11 +12,11 @@ import us.deans.javastudy.base.BaseOperation;
 import us.deans.javastudy.operations.core10.IDataAdapter_TopTen_List;
 
 
-public class DmJdbcTopTenList extends BaseOperation implements IDataAdapter_TopTen_List {
+public class DmJdbcTopTenLinkedList extends BaseOperation implements IDataAdapter_TopTen_List {
 
 	Connection conn;
 	
-	public DmJdbcTopTenList() {	
+	public DmJdbcTopTenLinkedList() {	
 	
 		try {
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/XEPDB1", "system", "!code"); 

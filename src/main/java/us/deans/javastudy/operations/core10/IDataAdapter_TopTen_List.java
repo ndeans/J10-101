@@ -15,7 +15,7 @@ public interface IDataAdapter_TopTen_List {
 		public String CITY;	
 	
 		protected String getString() {
-			return FIRST_NAME + ", " + LAST_NAME + ", " + SALARY + ", " + DEPARTMENT_NAME + ", " + CITY + "\r";
+			return "{" + FIRST_NAME + ", " + LAST_NAME + ", " + SALARY + ", " + DEPARTMENT_NAME + ", " + CITY + "}";
 		}
 	}
 }
