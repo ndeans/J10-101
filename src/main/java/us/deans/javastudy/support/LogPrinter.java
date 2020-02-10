@@ -3,13 +3,18 @@ package us.deans.javastudy.support;
 public class LogPrinter {
 
 	private static LogPrinter instance = null;
+	private static int served = 0;
 	
-	protected LogPrinter() { }
+	private LogPrinter() {
+		System.out.println("!!! instantiating the LogPrinter !!!");
+	}
 	
 	public static LogPrinter getInstance() {
 		if (instance == null) {
 			instance = new LogPrinter();
 		}
+		served++;
+		System.out.println("~~~ returning reference to the LogPrinter instance : " + served  + " ~~~");
 		return instance;
 	}
 
@@ -31,6 +36,10 @@ public class LogPrinter {
 	
 	public void printMsg(String msg) {
 		System.out.println(".. " + msg);
+	}
+	
+	public void countServed() {
+		System.out.println(".. " + served + " LogPrinter served");
 	}
 	
 }

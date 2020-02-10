@@ -36,7 +36,6 @@ public class DmParseXMLBreakfastMenu extends BaseOperation {
 		}
 	}
 	
-	@SuppressWarnings({"unchecked", "null"})
 	public List<DataXMLFood> parseMenuFromXML(String datafile) {
 		
 		List<DataXMLFood> items = new ArrayList<DataXMLFood>();

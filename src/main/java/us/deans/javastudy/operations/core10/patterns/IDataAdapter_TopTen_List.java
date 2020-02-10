@@ -1,13 +1,13 @@
-package us.deans.javastudy.operations.core10;
+package us.deans.javastudy.operations.core10.patterns;
 
 import java.util.List;
 
 public interface IDataAdapter_TopTen_List {
 
-	public String getMessage();
 	public List<String> getListOfRecords();
 	
 	class DataRecord {
+		
 		public String FIRST_NAME;
 		public String LAST_NAME;
 		public long SALARY;

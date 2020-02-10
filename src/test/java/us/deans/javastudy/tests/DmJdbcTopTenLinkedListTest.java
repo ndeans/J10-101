@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import us.deans.javastudy.operations.core10.DmJdbcTopTenLinkedList;
+import us.deans.javastudy.operations.core10.patterns.DmJdbcTopTenLinkedList;
 import us.deans.javastudy.support.LogPrinter;
 
 public class DmJdbcTopTenLinkedListTest {

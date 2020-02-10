@@ -1,4 +1,4 @@
-package us.deans.javastudy.operations.core10;
+package us.deans.javastudy.operations.core10.patterns;
 
 import java.util.Map;
 
@@ -15,7 +15,7 @@ public interface IDataAdapter_TopTen_Map {
 		public String CITY;	
 	
 		protected String getString() {
-			return FIRST_NAME + ", " + LAST_NAME + ", " + SALARY + ", " + DEPARTMENT_NAME + ", " + CITY + "\r";
+			return "{" + FIRST_NAME + ", " + LAST_NAME + ", " + SALARY + ", " + DEPARTMENT_NAME + ", " + CITY + "}";
 		}
 
 	}

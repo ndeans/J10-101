@@ -1,7 +1,6 @@
 package us.deans.javastudy.operations.core10;
 
 import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.support.LogPrinter;
 
 public class DmBinaryTreeCheck extends BaseOperation {
 	

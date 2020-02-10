@@ -1,6 +1,8 @@
 package us.deans.javastudy.operations.core10;
 
-public class DmFibonacci {
+import us.deans.javastudy.base.BaseOperation;
+
+public class DmFibonacci extends BaseOperation{
 
 	public DmFibonacci() { }
 	
@@ -8,11 +10,12 @@ public class DmFibonacci {
 		
 		int t1=0, t2=1;
 		
-		System.out.println("first " + loop + " terms: ");
+		// System.out.println("first " + loop + " terms: ");
+		lp.printMsg("first " + loop + " terms: ");
 		
 		for (int i=1; i<=loop; i++) {
 			
-			System.out.print(t1 + " + ");
+			lp.printMsg(t1 + " + ");
 			
 			int sum = t1 + t2;
 			t1 = t2;
@@ -28,7 +31,7 @@ public class DmFibonacci {
 		
 		while (i <= loop) {
 			
-			System.out.print(t1 + " + ");
+			lp.printMsg(t1 + " + ");
 			
 			int sum = t1 + t2;
 			t1 = t2;

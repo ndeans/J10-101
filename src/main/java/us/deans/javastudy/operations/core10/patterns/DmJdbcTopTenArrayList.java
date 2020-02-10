@@ -1,4 +1,4 @@
-package us.deans.javastudy.operations.core10;
+package us.deans.javastudy.operations.core10.patterns;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,11 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import us.deans.javastudy.base.BaseOperation;
-import us.deans.javastudy.operations.core10.IDataAdapter_TopTen_List;
 
 
 public class DmJdbcTopTenArrayList extends BaseOperation implements IDataAdapter_TopTen_List {

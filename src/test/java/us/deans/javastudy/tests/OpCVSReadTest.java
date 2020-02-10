@@ -1,7 +1,5 @@
 package us.deans.javastudy.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
 import us.deans.javastudy.operations.core10.OpCSVRead;

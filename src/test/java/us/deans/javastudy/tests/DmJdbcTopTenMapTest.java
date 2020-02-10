@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import us.deans.javastudy.operations.core10.DmJdbcTopTenMap;
+import us.deans.javastudy.operations.core10.patterns.DmJdbcTopTenMap;
 import us.deans.javastudy.support.LogPrinter;
 
 public class DmJdbcTopTenMapTest {

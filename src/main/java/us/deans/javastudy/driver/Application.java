@@ -1,11 +1,14 @@
+
+
 package us.deans.javastudy.driver;
 
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
 import us.deans.javastudy.operations.core10.*;
+import us.deans.javastudy.operations.core10.patterns.DmJdbcTopTenArrayList;
+import us.deans.javastudy.operations.core10.patterns.DmJdbcTopTenLinkedList;
+import us.deans.javastudy.operations.core10.patterns.DmJdbcTopTenMap;
 import us.deans.javastudy.operations.core10.patterns.OpHelloDI;
 import us.deans.javastudy.operations.core10.patterns.Singleton;
 import us.deans.javastudy.support.LogPrinter;
@@ -21,25 +24,25 @@ public class Application {
 		printBreak();
 		
 		// variable swap
-		lp.printHead("Variable Swap...");
+		lp.printHead("Variable Swap... [DmVarSwap]");
 		DmVarSwap vs = new DmVarSwap();
 		vs.swap(13, 7);
 		printBreak();
 		
 		// duplicate chars
-		lp.printHead("Print Duplicate Characters... ");
+		lp.printHead("Print Duplicate Characters... [DmDupChars] ");
 		DmDupChars dc = new DmDupChars();
 		dc.printDupes("vacation");
 		printBreak();
 		
 		// get a Singleton
-		lp.printHead("Get Singleton Instance... ");
+		lp.printHead("Get Singleton Instance... [Singleton] ");
 		Singleton singleton = Singleton.getInstance();
 		singleton.printHello();
 		printBreak();
 		
 		// print fibonacci sequence
-		lp.printHead("Print Fibonacci Sequence... ");
+		lp.printHead("Print Fibonacci Sequence... [DmFibonacci] ");
 		DmFibonacci fib = new DmFibonacci();
 		fib.sequenceFor(10);
 		System.out.println();
@@ -48,9 +51,11 @@ public class Application {
 		printBreak();
 		
 		// create an ArrayList of Strings representing colors and sort it.
-		lp.printHead("Sorting an ArrayList of Strings...");
+		lp.printHead("Sorting an ArrayList of Strings... [DmSortListSimple]");
 		DmSortListSimple slist_b = new DmSortListSimple();
-		slist_b.printList(); 
+		slist_b.printList();
+		lp.printBreak();
+		
 		System.out.println();
 		slist_b.sortList();
 		slist_b.printList(); 
@@ -59,7 +64,7 @@ public class Application {
 		printBreak();
 
 		// create a list of color records and sort by level.
-		lp.printHead("Create an ArrayList of custom objects (ColorDef) and sort by Level...");
+		lp.printHead("Create an ArrayList of custom objects (ColorDef) and sort by Level... [DmSortListComparator]");
 		DmSortListComparator slist_c = new DmSortListComparator();
 		slist_c.sortListByLevel(); printBreak();
 		
@@ -69,69 +74,69 @@ public class Application {
 		printBreak();
 		
 		// now play with Linked Lists
-		lp.printHead("Create and populate a LinkedList...");
+		lp.printHead("Create and populate a LinkedList... [OpLinkedList]");
 		OpLinkedList listMgr = new OpLinkedList();
 		listMgr.getStatus();
 		listMgr = null;
 		printBreak();
 		
 		// now play with HashMaps
-		lp.printHead("Create and populate a HashMap...");
+		lp.printHead("Create and populate a HashMap... [OpHashMap]");
 		OpHashMap hmapMgr = new OpHashMap();
 		hmapMgr.start();
 		hmapMgr = null;
 		printBreak();
 		
 		// Find Common Names between two String arrays
-		lp.printHead("Find common names between two String arrays...");
+		lp.printHead("Find common names between two String arrays... [DmCommonStrings]");
 		DmCommonStrings cs = new DmCommonStrings();
 		cs.start();
 		printBreak();
 		
 		// Check if word is a palindrome
-		lp.printHead("Check if word is a palindrome...");
+		lp.printHead("Check if word is a palindrome... [DmPalindrome]");
 		DmPalindrome c4p = new DmPalindrome();
 		c4p.start();
 		printBreak();
 		
 		// binary search tree
-		lp.printHead("Binary Tree Check...");
+		lp.printHead("Binary Tree Check... [DmBinaryTreeCheck]");
 		DmBinaryTreeCheck btc = new DmBinaryTreeCheck();
 		btc.start();
 		printBreak();
 		
 		// averages
-		lp.printHead("Print averages (integers to doubles)...");
+		lp.printHead("Print averages (integers to doubles)... [DmAverages]");
 		DmAverages a = new DmAverages();
 		a.start();
 		printBreak();
 		
 		// generics
-		lp.printHead("Advantages of Generics???");
+		lp.printHead("Advantages of Generics???  [DmGenericOrNot]");
 		DmGenericOrNot gen = new DmGenericOrNot();
 		gen.start();
 		printBreak();
 		
 		// parsing XML with STAX (Java Streaming API for XML)
-		lp.printHead("Parsing XML with STAX...");
+		lp.printHead("Parsing XML with STAX...  [DmParseXMLBreakfastMenu]");
 		DmParseXMLBreakfastMenu stax = new DmParseXMLBreakfastMenu();
 		stax.start();
 		printBreak();
 		
 		// Check for number in array
-		lp.printHead("Check for Integer in Array");
+		lp.printHead("Check for Integer in Array... [DmFindNumberInArray] ");
 		DmFindNumberInArray fnia = new DmFindNumberInArray();
 		fnia.start();
 		printBreak();
 		
 		// Write to CSV File
-		lp.printHead("Write a map to a CSV file...");
+		lp.printHead("Write a map to a CSV file...  [OpCSVWrite]");
 		OpCSVWrite writer = new OpCSVWrite();
 		writer.start();
 		printBreak();
 		
 		// Read CSV file
-		lp.printHead("Read a CVSV file...");
+		lp.printHead("Read a CVSV file...  [OpCSVRead]");
 		OpCSVRead reader = new OpCSVRead();
 		reader.start();
 		printBreak();
@@ -233,11 +238,13 @@ public class Application {
 		lp.printMsg(hmap.toString());
 		printBreak();		
 		
+		// Strategy Pattern
+		
 		
 		
 		// program complete
 		lp.printHead("Testing Complete :)");
-		
+		lp.countServed();
 		
 	}
 	
