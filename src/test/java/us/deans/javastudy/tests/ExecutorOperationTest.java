@@ -11,28 +11,28 @@ import us.deans.javastudy.support.LogPrinter;
 
 class ExecutorOperationTest {
 
-	LogPrinter lp;
-	
-	@BeforeEach
-	void setUp() throws Exception {
-		lp = LogPrinter.getInstance();
-	}
+    LogPrinter lp;
 
-	@AfterEach
-	void tearDown() throws Exception {
-		lp = null;
-	}
-	
-	
-	@Test
-	void test() {
-		
-		lp.printHead("Executor Operation...");
-		
-		DmExecutorOperation xo = new DmExecutorOperation();
-		xo.start(1);
-		
-		fail("Not yet implemented");
-	}
+    @BeforeEach
+    void setUp() throws Exception {
+        lp = LogPrinter.getInstance();
+    }
+
+    @AfterEach
+    void tearDown() throws Exception {
+        lp = null;
+    }
+
+
+    @Test
+    void test() {
+
+        lp.printHead("Executor Operation...");
+
+        DmExecutorOperation xo = new DmExecutorOperation();
+        xo.start(1);
+
+        fail("Not yet implemented");
+    }
 
 }

@@ -4,15 +4,15 @@ import us.deans.javastudy.support.GreetingService;
 
 public class DiConstructor {
 
-	private GreetingService gService = null;
+    private GreetingService gService = null;
 
-	
-	public DiConstructor(GreetingService gs) {
-		this.gService = gs;
-	}
-	
-	public String hello() {
-		return gService.getGreeting();
-	}
+
+    public DiConstructor(GreetingService gs) {
+        this.gService = gs;
+    }
+
+    public String hello() {
+        return gService.getGreeting();
+    }
 
 }

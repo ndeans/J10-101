@@ -7,13 +7,13 @@ import us.deans.javastudy.base.BaseOperation;
 
 public class DmLoggingAPI extends BaseOperation {
 
-	private static final Logger logger = Logger.getLogger(DmLoggingAPI.class.getName());
-	
-	@Override
-	public void start() {
+    private static final Logger logger = Logger.getLogger(DmLoggingAPI.class.getName());
 
-		logger.log(Level.INFO, "Hello World!");
+    @Override
+    public void start() {
 
-	}
-	
+        logger.log(Level.INFO, "Hello World!");
+
+    }
+
 }

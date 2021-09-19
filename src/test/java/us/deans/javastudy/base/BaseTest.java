@@ -8,9 +8,9 @@ import us.deans.javastudy.support.LogPrinter;
 @SuppressWarnings("unused")
 public class BaseTest {
 
-	protected  LogPrinter lp;
-	
-	public BaseTest() {	
-	}
-	
+    protected LogPrinter lp;
+
+    public BaseTest() {
+    }
+
 }

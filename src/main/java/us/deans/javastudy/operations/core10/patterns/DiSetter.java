@@ -4,16 +4,17 @@ import us.deans.javastudy.support.GreetingService;
 
 public class DiSetter {
 
-	private GreetingService gService = null;
-	
-	public DiSetter(){}
+    private GreetingService gService = null;
 
-	public void setService(GreetingService service) {
-		this.gService = service;
-	}
-	
-	public String hello() {
-		return gService.getGreeting();
-	}
-	
+    public DiSetter() {
+    }
+
+    public void setService(GreetingService service) {
+        this.gService = service;
+    }
+
+    public String hello() {
+        return gService.getGreeting();
+    }
+
 }

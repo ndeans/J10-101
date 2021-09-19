@@ -17,8 +17,8 @@ public class OpCSVRead extends BaseOperation {
     private static final int CUSTOMER_AGE = 3;
 
     BufferedReader fr = null;
-    
-	public void start() {
+
+    public void start() {
 
         try {
 
@@ -30,7 +30,7 @@ public class OpCSVRead extends BaseOperation {
             while ((line = fr.readLine()) != null) {
                 String[] tokens = line.split(",");
                 if (tokens.length > 0) {
-                    DsCustomer customer = new DsCustomer(tokens[CUSTOMER_ID_IDX],tokens[CUSTOMER_NAME_IDX],tokens[CUSTOMER_ADDRESS_IDX],Integer.parseInt(tokens[CUSTOMER_AGE]));
+                    DsCustomer customer = new DsCustomer(tokens[CUSTOMER_ID_IDX], tokens[CUSTOMER_NAME_IDX], tokens[CUSTOMER_ADDRESS_IDX], Integer.parseInt(tokens[CUSTOMER_AGE]));
                     customers.add(customer);
                 }
             }

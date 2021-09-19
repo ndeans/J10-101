@@ -11,7 +11,6 @@ import us.deans.javastudy.model.DsCustomer;
 /**
  * @author ndeans
  * @version 1.0
- * 
  */
 public class OpCSVWrite extends BaseOperation {
 
@@ -25,10 +24,10 @@ public class OpCSVWrite extends BaseOperation {
             new DsCustomer("5", "Jason Bourne", "California", 36));
 
     FileWriter fw = null;
-    
+
     public OpCSVWrite() {
     }
-    
+
     @Override
     public void start() {
 
@@ -52,10 +51,10 @@ public class OpCSVWrite extends BaseOperation {
 
             System.out.println("Write CSV successfully!");
 
-        } catch(IOException x2) {
+        } catch (IOException x2) {
             System.out.println("Writing CSV error!");
             x2.printStackTrace();
-        } catch(Exception x1){
+        } catch (Exception x1) {
             System.out.println("Writing CSV error!");
             x1.printStackTrace();
         } finally {
@@ -71,6 +70,6 @@ public class OpCSVWrite extends BaseOperation {
         }
 
     }
-    
-	
+
+
 }

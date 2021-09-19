@@ -4,14 +4,14 @@ import java.util.List;
 
 public class SpReportExecutive extends SpProcessBase implements SpReportStrategy {
 
-	public SpReportExecutive(int option) {
-		super();
-		lp.printMsg("!!! instantiating the Processor !!!");
-	}
+    public SpReportExecutive(int option) {
+        super();
+        lp.printMsg("!!! instantiating the Processor !!!");
+    }
 
-	@Override
-	public List<SpDataRecord> getReport(List<SpDataRecord> data) {
-		return data;
-	}
+    @Override
+    public List<SpDataRecord> getReport(List<SpDataRecord> data) {
+        return data;
+    }
 
 }

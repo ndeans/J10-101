@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface SpReportStrategy {
 
-	public List<SpDataRecord> getReport(List<SpDataRecord> data);
+    public List<SpDataRecord> getReport(List<SpDataRecord> data);
 
 }

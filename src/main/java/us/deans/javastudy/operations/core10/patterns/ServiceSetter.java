@@ -4,6 +4,6 @@ import us.deans.javastudy.support.GreetingService;
 
 public interface ServiceSetter {
 
-	public void setService(GreetingService Servcice);
-	
+    public void setService(GreetingService Servcice);
+
 }
