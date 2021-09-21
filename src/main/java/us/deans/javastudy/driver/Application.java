@@ -19,6 +19,11 @@ public class Application {
     public static void main(String[] args) {
 
         LogPrinter lp = LogPrinter.getInstance();
+        if (args.length < 1) {
+        	lp.printMsg("Application expects an argument! Program Exiting.");
+        	System.exit(1);
+        }
+        
         
         boolean oracle_db = (args[0].equalsIgnoreCase("1"));
         
