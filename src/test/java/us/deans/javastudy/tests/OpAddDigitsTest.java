@@ -8,18 +8,18 @@ import us.deans.javastudy.base.BaseTest;
 import us.deans.javastudy.operations.core10.OpAddDigits;
 import us.deans.javastudy.support.LogPrinter;
 
-public class OpAddDigitsTest extends BaseTest{
+public class OpAddDigitsTest extends BaseTest {
 
-	@Test
-	public void testAddDigits() {
-		
-		lp = LogPrinter.getInstance();
-		lp.printHead("Add digits of input number...");
-		
-		OpAddDigits op = new OpAddDigits();
-		int x = op.add(12345);
-		assertEquals(15, x);
-		
-	}
-	
+    @Test
+    public void testAddDigits() {
+
+        lp = LogPrinter.getInstance();
+        lp.printHead("Add digits of input number...");
+
+        OpAddDigits op = new OpAddDigits();
+        int x = op.add(12345);
+        assertEquals(15, x);
+
+    }
+
 }

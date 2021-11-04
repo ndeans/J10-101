@@ -9,15 +9,15 @@ import us.deans.javastudy.support.LogPrinter;
 
 public class Stream_ReadFileTest {
 
-	LogPrinter lp;
-	
-	@Test
-	void test() {
-	 	
-		lp.printHead("Stream Read File ...");
-		Stream_ReadFile str1 = new Stream_ReadFile();
-		str1.start();
-		assertTrue(true);
-		
-	}
+    LogPrinter lp;
+
+    @Test
+    void test() {
+
+        lp.printHead("Stream Read File ...");
+        Stream_ReadFile str1 = new Stream_ReadFile();
+        str1.start();
+        assertTrue(true);
+
+    }
 }

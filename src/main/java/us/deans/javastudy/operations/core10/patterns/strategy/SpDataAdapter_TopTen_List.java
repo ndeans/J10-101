@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface SpDataAdapter_TopTen_List {
 
-	public List<SpDataRecord> getListOfRecords();
+    public List<SpDataRecord> getListOfRecords();
 
 }

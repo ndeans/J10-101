@@ -11,20 +11,19 @@ import us.deans.javastudy.support.LogPrinter;
 
 public class DmJdbcTopTenArrayListTest {
 
-	LogPrinter lp;
-	
-	@Test
-	public void testConnection() {
-		
-		DmJdbcTopTenLinkedList top10 = new DmJdbcTopTenLinkedList();
-		List<String> list = top10.getListOfRecords();
-		
-		String test = list.toString();
-		lp.printMsg(test);
-		assertTrue(list.size() > 0);	
-		
-	}
-	
-	
-	
+    LogPrinter lp;
+
+    @Test
+    public void testConnection() {
+
+        DmJdbcTopTenLinkedList top10 = new DmJdbcTopTenLinkedList();
+        List<String> list = top10.getListOfRecords();
+
+        String test = list.toString();
+        lp.printMsg(test);
+        assertTrue(list.size() > 0);
+
+    }
+
+
 }

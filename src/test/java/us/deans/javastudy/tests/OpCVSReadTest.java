@@ -6,12 +6,12 @@ import us.deans.javastudy.operations.core10.OpCSVRead;
 
 class OpCVSReadTest {
 
-	@Test
-	void test() {
+    @Test
+    void test() {
 
-		OpCSVRead reader = new OpCSVRead();
-		reader.start();
-		
-	}
+        OpCSVRead reader = new OpCSVRead();
+        reader.start();
+
+    }
 
 }

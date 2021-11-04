@@ -7,14 +7,14 @@ public class DsCustomer {
     private String address;
     private int age;
 
-    public DsCustomer(){
+    public DsCustomer() {
     }
 
     public DsCustomer(String id, String name, String address, int age) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.age  = age;
+        this.age = age;
     }
 
     public String getId() {
@@ -53,5 +53,5 @@ public class DsCustomer {
     public String toString() {
         return "Customer [id=" + id + ", name=" + name + ", address=" + address + ", age=" + age + "]";
     }
-    
+
 }

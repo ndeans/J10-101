@@ -4,10 +4,10 @@ import us.deans.javastudy.support.LogPrinter;
 
 public class SpProcessBase {
 
-	protected LogPrinter lp = LogPrinter.getInstance();
-	
-	public SpProcessBase() {
-		
-	}
-	
+    protected LogPrinter lp = LogPrinter.getInstance();
+
+    public SpProcessBase() {
+
+    }
+
 }

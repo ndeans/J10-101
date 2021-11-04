@@ -9,27 +9,27 @@ import static org.junit.Assert.assertTrue;
 
 public class SpControllerTest {
 
-	static LogPrinter lp = LogPrinter.getInstance();
-	SpController c = new SpController();
-	
-	@Test
-	public void testExecutiveStrategy() {
-		
-		lp.printHead("'Executive' Strategy Pattern ");
-		c.start(1);
-		lp.countServed();
-		assertTrue(true);
-		
-	}
-	
-	@Test
-	public void testStaffStrategy() {
-		
-		lp.printHead("'Staff' Strategy Pattern ");
-		c.start(5);
-		lp.countServed();
-		assertTrue(true);
-		
-	}
-	
+    static LogPrinter lp = LogPrinter.getInstance();
+    SpController c = new SpController();
+
+    @Test
+    public void testExecutiveStrategy() {
+
+        lp.printHead("'Executive' Strategy Pattern ");
+        c.start(1);
+        lp.countServed();
+        assertTrue(true);
+
+    }
+
+    @Test
+    public void testStaffStrategy() {
+
+        lp.printHead("'Staff' Strategy Pattern ");
+        c.start(5);
+        lp.countServed();
+        assertTrue(true);
+
+    }
+
 }

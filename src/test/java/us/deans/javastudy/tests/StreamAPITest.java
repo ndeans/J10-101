@@ -13,27 +13,27 @@ import us.deans.javastudy.support.LogPrinter;
 
 class StreamAPITest {
 
-	LogPrinter lp;
-	
-	@BeforeEach
-	void setUp() throws Exception {
-		lp = LogPrinter.getInstance();
-	}
+    LogPrinter lp;
 
-	@AfterEach
-	void tearDown() throws Exception {
-		lp = null;
-	}
-	
-	@Test
-	void test() {
-	 	
-		lp.printHead("Stream API ...");
-		StreamAPI str1 = new StreamAPI();
-		str1.start();
-		assertTrue(true);
-		
-	}
+    @BeforeEach
+    void setUp() throws Exception {
+        lp = LogPrinter.getInstance();
+    }
 
-	
+    @AfterEach
+    void tearDown() throws Exception {
+        lp = null;
+    }
+
+    @Test
+    void test() {
+
+        lp.printHead("Stream API ...");
+        StreamAPI str1 = new StreamAPI();
+        str1.start();
+        assertTrue(true);
+
+    }
+
+
 }
